@@ -1,0 +1,79 @@
+.header-container
+{
+    color: #fff;
+	padding-bottom: 10px;
+	
+	.dados-pagina
+	{
+		padding: 10px;
+		width: 100%;
+	}
+
+	.area-logo
+	{
+		width: 50px;
+		height: 50px;
+		background: url('../images/logo-cabecalho.png');
+		background-size: 100% 100%;
+		margin-right: 10px;
+	}
+
+	.titulo-pagina
+	{
+		height: 50px;
+		line-height: 45px;
+		vertical-align: middle;
+		font-size: 12pt;
+	}
+
+	.botoes-cabecalho
+	{
+		height: 50px;
+		line-height: 45px;
+		vertical-align: middle;
+		font-size: 12pt;
+		text-align: right;
+		margin-right: 5px;
+	}
+
+	.filtros
+	{
+		padding-top: 15px;
+		padding-left: 20px;
+		width: 100%;
+		font-size: 9pt;
+		color: #FFCC00;
+		text-align: left;
+	}
+
+	hr
+	{
+		margin: 0px;
+	}
+
+	.botao-cabecalho
+	{
+		border: none;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+	}
+
+	.botao-pesquisa
+	{
+		background: url('../images/icone-lupa.png');
+		background-size: 100% 100%;
+	}
+
+	.botao-logout
+	{
+		background: url('../images/icone-botao-energia.png');
+		background-size: 100% 100%;
+		margin-left: 10px;
+	}
+
+	.periodo-apr
+	{
+		padding-right: 15px;
+	}
+}

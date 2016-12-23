@@ -1,0 +1,13 @@
+<div class="navigation-container">
+	<div class="itens-navegados">
+		{{itensNavegados}}
+	</div>
+	<div class="botoes-navegacao">
+        <div class="botao-voltar pull-left" ng-click="onVoltar()"></div>
+        <div class="botao-criar" ng-class="{ botaoCriarVerde: modoEdicao }" ng-click="onCriarClick()" ng-hide="modoVisualizacao">
+            <span ng-class="{iconeBotaoCriar: !modoEdicao, iconeBotaoSalvar: modoEdicao}"></span>
+            <span class="texto-botao-criar">{{textoBotaoCriar}}</span>
+        </div>
+		<div class="filler" ng-show="modoVisualizacao"></div>
+	</div>
+</div>

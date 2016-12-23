@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>App Avaliação Preliminar de Riscos</title>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <script src="scripts/template/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Montserrat:400,700"]
+        }
+      });
+    </script>
+    <script type="text/javascript" src="scripts/template/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="styles/washington.css">
+    <link rel="stylesheet" type="text/css" href="styles/ionicons.min.css" />
+    <!-- endbuild -->
+    
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <!-- endbuild -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoStandford32.ico">
+    <link rel="apple-touch-icon" href="images/logoStandford32.ico">
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- <drawer></drawer> -->
+
+    <div class="mycontainer">
+      <div class="container-fluid" ui-view></div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/template/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/template/framework.js"></script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/app.js"></script>
+    <script src="template.js"></script>
+	
+    <script src="shared/config.js"></script>
+    <script src="shared/enderecoServicos.js"></script>
+    <script src="shared/httpRequestInterceptor.js"></script>
+    <script src="shared/usuarioService.js"></script>
+    <script src="shared/filtroService.js"></script>
+    <script src="shared/ajuda/ajudaService.js"></script>
+	
+    <script src="shared/cabecalho/cabecalhoDirective.js"></script>
+	
+    <script src="shared/navegacao/navegacaoDirective.js"></script>
+	  <script src="shared/navegacao/navegacaoService.js"></script>
+	
+    <script src="components/login/loginController.js"></script>  
+    <script src="components/login/loginService.js"></script>
+
+    <script src="components/doctorsList/doctorsListController.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

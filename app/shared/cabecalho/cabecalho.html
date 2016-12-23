@@ -1,0 +1,15 @@
+<div class="header-container">
+    <div class="dados-pagina">
+        <div class="area-logo pull-left"></div>
+        <div class="titulo-pagina pull-left" ng-show="titulo">{{titulo}}</div>
+        <div class="botoes-cabecalho">
+            <div class="botao-cabecalho botao-logout pull-right" ng-hide="esconderLogout" ng-click="onLogoutClick()"></div>
+            <div class="botao-cabecalho botao-pesquisa pull-right" ng-hide="esconderPesquisa" ng-click="onPesquisaClick()"></div>
+        </div>
+        <div class="filtros">
+            <div class="filtro-equipamento" ng-show="filtros.area"><span>{{filtros.area}}</span><span ng-show="filtros.celula"> - {{filtros.celula}}</span><span ng-show="filtros.instalacao"> - {{filtros.instalacao}}</span></div>
+            <div class="filtro-apr"><span class="periodo-apr" ng-show="filtros.dataInicial || filtros.dataFinal"><span>{{filtros.dataInicial | date:'dd/MM/yyyy HH:mm'}}</span><span ng-show="filtros.dataFinal"> a {{filtros.dataFinal | date:'dd/MM/yyyy HH:mm'}}</span></span><span class="emitente-apr" ng-show="filtros.emitente">{{filtros.emitente}}</span></div>
+        </div>
+    </div>
+    <hr />
+</div>

@@ -1,0 +1,179 @@
+@font-face {
+font-family: 'Avenir Next LT Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Regular'), url('../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avenir Next LT Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir Next LT Pro Bold'), url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+}
+
+.login_container
+{
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	.ajuda {
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
+		background-color: #222430;
+		border: #222430 1px solid;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 13pt;
+	}
+	
+	.area_titulo
+	{
+		margin: auto; 
+		margin-top: 18px;                                                                                          
+		border-radius: 50%;
+		background-color: #222430;
+		width: 284px;
+		height: 284px;
+		padding-top: 15px;		
+		animation: titulo_aumentar 1s;
+		hr
+		{
+			margin: 30px auto 24px auto;
+			width: 200px;
+			border-color:#3a3e52;
+		}
+	}
+		@keyframes titulo_aumentar {
+			0% {
+				transform: scale3d(0.0001, 0.0001, 0.0001);
+			}
+			100% {
+				transform: scale3d(1, 1, 1);
+			}
+		}
+	.area_logo
+	{
+		margin: auto;
+		margin-top: 50px;
+		font-size: 30px;  
+		background-color: #222430;
+		background-size: 100% 100%;
+		width: 135px;
+		height: 39px;
+	}
+
+	.titulo
+	{
+		font-size: 19px;
+		font-family: "Avenir Next LT Pro Bold";
+		color:#fff;
+	}
+
+	.versao
+	{
+		margin-top: 9px;
+		font-size: 13px;
+		font-family: "Avenir Next LT Pro Regular";
+		color:#5f6d76;
+	}
+
+	.linha-input-login
+	{
+		padding-bottom: 3%;
+	}
+
+	.area_conteudo
+	{
+		padding-top: 10%;
+	}
+
+	.labelUsuarioSenha
+	{
+		font-size: 10px;
+		color: white;
+		font-family: "Avenir Next LT Pro Regular";
+		line-height: 50%;
+	}
+
+	.input
+	{
+		width: 100%;
+		height: 80px;
+		padding-left: 20%;
+		border: 1px solid #3a3e52;
+		border-radius: 100px;
+		color: #72848b;
+		font-family: "Avenir Next LT Pro Regular";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 50%;
+	}
+
+	input:focus
+	{
+		outline: #2b2d3c;
+	}
+
+	.input-usuario
+	{
+		background: url('../images/account-icon.png');
+		background-repeat: no-repeat;
+		background-position-x: 15px;
+		background-position-y: 50%;
+		padding-left: 47px;
+		height: 30px;
+	}
+	
+	.input-senha
+	{
+		background: url('../images/password-icon.png');
+		background-repeat: no-repeat;
+    	background-position-x: 15px;
+    	background-position-y: 50%;
+		height: 30px;
+		padding-left: 47px;
+	}
+
+	.botao_login{
+		border: 1px solid #D2DBE4;
+		color: #fff;
+		background: #2294f7;
+		width: 96px;
+		height: 30px;
+		border-radius: 30px;
+		cursor: pointer;
+		float:right;
+		
+		
+		span
+		{
+			font-size: 12px;
+			background-position-x: 15%;
+    		background-position-y: 50%;
+		}
+
+		i
+		{
+			font-size: 10px;
+			background-position-x: 95%;
+			background-position-y: 50%;
+		}
+	}
+
+	.login_wrapper{
+		padding-top:45px;
+		hr
+		{
+			margin-top: 15px;
+			border-color: #3a3e52;;
+		}
+	}
+}
+
+
+
